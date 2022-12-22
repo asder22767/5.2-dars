@@ -1,0 +1,64 @@
+.temperature-converter {
+    background-color: #F8F8F8;
+    
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 32px;
+        background-color: #ffffff;
+    }
+    
+    &__heading {
+        margin: 0;
+        margin-bottom: 20px;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+    }
+    
+    &__input-temperature {
+        margin-bottom: 20px;
+        width: 290px;
+    }
+    
+    &__outcome {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 291px;
+        background-color: #efefef;
+        margin-top: 11px;
+        margin-bottom: 20px;
+    }
+    
+    &__outcome--text {
+        font-weight: 500;
+    }
+    
+    &__button-submit, &__button-changer {
+        &:hover {
+            color: #808080;
+            background-color: #F8F8F8;
+        }
+        
+        &:active {
+            color: #00ffff;
+            border-color: #00ffff;
+        }
+    }
+    
+    &__button-changer {
+        padding: 8px 15px 8px 15px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 1px solid #e6eaf1;
+        border-radius: 6px;
+        transform: translate(120%, 105%);
+    }
+}
+
+.changer--tricky {
+    display: none;
+}
